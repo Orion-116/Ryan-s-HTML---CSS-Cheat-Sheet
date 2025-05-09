@@ -1,0 +1,17 @@
+* {
+    font-family: sans-serif;
+    background-color: gray;
+}
+
+.title {
+    font-size: xx-large;
+    text-align: center;
+}
+
+.skelton {
+
+    margin: 25px;
+    font-size: x-large;
+    font-weight: bolder;
+    
+}
