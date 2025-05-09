@@ -25,7 +25,146 @@
     &lt;/body&gt;<br>
     &lt;/html&gt;<br>
 </pre>
+<br>
+<table>
+<caption>A Table Going Over The Basic Elements of A Table</caption>
+<thead>
+<tr>
+    <th scope="col" class="item">Item</th>
+    <th scope="col" class="description">Description</th>
+    <th scope="col" class="example">Example</th>
+</tr>
+</thead>
+<tbody>
+     <!--Table-->
+    <tr>
+        <th scope ="row">&lt;table&gt;</th>
+        <td>This is the main table element</td>
+        <td>&lt;table&gt; and &lt;/table&gt;</td>
+    </tr>
+    <!--Caption-->
+    <tr>
+        <th scope ="row" class="item">&lt;caption&gt;</th>
+        <td class="description">This is a caption text that can be placed to describe the table</td>
+        <td class="example">&lt;caption&gt; and &lt;/caption&gt;</td>
+    </tr>
+    <!--Thead-->
+    <tr>
+        <th scope ="row" class="item">&lt;thead&gt;</th>
+        <td class="description">This declars the 1st row on the table, but an &lt;tr&gt; is needed to fill the table row</td>
+        <td class="example">&lt;thead&gt; and &lt;/thead&gt;</td>
+    </tr>
+    <!--tr-->
+    <tr>
+        <th scope ="row" class="item">&lt;tr&gt;</th>
+        <td class="description">This element fills the row and contains &lt;th&gt; for the heading (or 1st cell), &lt;td&gt; for the table data (2nd cell)</td>
+        <td class="example">&lt;thead&gt; and &lt;/thead&gt;</td>
+    </tr>
+    <!--td-->
+    <tr>
+        <th scope ="row" class="item">&lt;td&gt;</th>
+        <td class="description">This contains the table data</td>
+        <td class="example">&lt;td&gt; and &lt;/td&gt;</td>
+    </tr>
+    </tbody>
+    <tfoot>
+    <tr>
+        <td scope="row" colspan="3">Here lies the &lt;tfoot&gt; element, which requires a &lt;tr&gt; and defined colspan (here it is 3) and a &lt;td&gt; to actually fill with data</td>
+    </tr> 
+    </tfoot>
+</table>
+<aside>Remember a table row &lt;tr&gt; must always have a &lt;td&gt;!!!!</aside>
 
+<h1>Here is this site's CSS Code</h1>
+<pre><code>
+    
+    * {
+        font-family: sans-serif;
+        background-color: lightgray;
+    }
+    
+    .title {
+        font-size: xx-large;
+        text-align: center;
+    }
+    
+    .skelton {
+    
+        margin: 25px;
+        font-size: x-large;
+        font-weight: bolder;
+        
+    }
+    
+    table {
+        
+        border-collapse: collapse;
+        border: 2px solid rgb(140, 140, 140);
+        letter-spacing: 1px;
+        width: 100%;
+    }
+    
+    caption {
+        caption-side: top;
+        padding: 10px;
+        font-weight: bold;
+        font-size: larger;
+    }
+    
+    thead, tfoot {
+        background-color: rbg(228, 240, 245);
+    }
+    
+    th, td {
+        border: 1px solid rgb(160, 160, 160);
+        padding: 8px 10px;
+        vertical-align: top;
+       
+    }
+    td.description {
+        white-space: normal;
+        word-wrap: break-word;
+        word-break: break-word;
+        width: 60%;
+    }
+    
+    td.example {
+        white-space: nowrap;
+        width: 20%;
+    }
+    
+    tfoot tr {
+        text-align: center;
+        font-weight: bold;
+    }
+    
+    aside {
+        color: brown;
+        font-weight: bold;
+    }
+    
+    code {
+        background-color: #f4f4f4;
+        padding: 4px 8px;
+        border-radius: 5px;
+        font-family: monospace;
+    }
+    
+pre code {
+    background-color: #1e1e1e;
+    color: #d4d4d4;
+    padding: 12px;
+    border-radius: 6px;
+    display: block;
+    font-family: monospace;
+    white-space: pre;
+    overflow: auto;
+    max-height: 150px;
+    font-size: 0.9rem;
+    border: 1px solid #333;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+}
+</code></pre>
 
 
 </body>
