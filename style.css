@@ -93,3 +93,44 @@ button:active {
 transform: translateY(5px);
   box-shadow: 0px 0px;
 }
+
+.panel{
+  margin-bottom: 40px;
+  padding: 80px 0px;
+  text-align: center;
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.panel h2 {
+  width: 100%;
+}
+.activity{
+  background-color: #2176FF;
+  box-sizing: border-box;
+  width: 240px;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-family: 'Amatic SC',sans-serif;
+  font-size: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 5px;
+}
+
+.activity:hover {
+  background: linear-gradient(to bottom, #2050FF, #ddd);
+  box-shadow: 0 6px #999;
+  transform: translateY(-2px);
+}
+
+.activity:active {
+  background: linear-gradient(to bottom, #ccc, #aaa);
+  box-shadow: 0 2px #666;
+  transform: translateY(2px);
+}
